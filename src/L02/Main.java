@@ -50,13 +50,15 @@ public class Main {
 
         findD2("Hello D");
         findD3("Hello D");
+
     }
+
 
     // 3n+6 = O(n)
     private static void findD3(String str) {
 
         str += "D"; // 1
-        int n= str.length(); // 1
+        int n = str.length(); // 1
         char ch = str.charAt(0); // 1
         int i = 1; // 1
 
@@ -64,7 +66,7 @@ public class Main {
             ch = str.charAt(i++); // n
         }
         // 2
-        if(i==n)
+        if (i == n)
             System.out.println("X");
         else
             System.out.println("V");
@@ -123,6 +125,7 @@ public class Main {
         else
             System.out.println("V"); //O(1)
     }
+    // a=4 , b=5 -> a*n+b = 4*n+5
 
     private static void algo2(int n) {
         if (n == 0)
@@ -136,4 +139,7 @@ public class Main {
             System.out.println("Hello");
         }
     }
+
+
+
 }
